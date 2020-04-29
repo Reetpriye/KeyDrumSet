@@ -1,12 +1,12 @@
 body {
   text-align: center;
-  background-color: #283149;
+  background-color: #21243d;
 }
 
 h1 {
   font-size: 5rem;
   color: #DBEDF3;
-  font-family: "Arvo", cursive;
+  font-family: 'Righteous', cursive;
   text-shadow: 3px 0 #DA0463;
 
 }
@@ -18,30 +18,31 @@ footer {
 
 .w {
 
+background-image: url(images/tom1.png);
 }
 
 .a {
-
+background-image: url(images/kick.png);
 }
 
 .s {
-
+  background-image: url(images/tom4.png);
 }
 
 .d {
-
+  background-image: url(images/snare.png);
 }
 
 .j {
-
+  background-image: url(images/tom3.png);
 }
 
 .k {
-
+  background-image: url(images/crash.png);
 }
 
 .l {
-
+  background-image: url(images/tom2.png);
 }
 
 .set {
