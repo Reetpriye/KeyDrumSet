@@ -1,12 +1,28 @@
 var numOfDrumButtons = document.querySelectorAll("button").length;
+//Detecting Mouse Click
 
-
-
-for (var i = 0; i<numOfDrumButtons; i++){
+for (var i = 0; i < numOfDrumButtons; i++){
 
 document.querySelectorAll("button")[i].addEventListener("click", function(){
+    var innerhtml = this.innerHTML;
+    playTone(innerhtml);
+} );
+};
 
-    switch(this.innerHTML)
+
+//Detecting Keyboard Press
+
+for (var i = 0; i < numOfDrumButtons; i++) {
+    
+    document.addEventListener("keypress", function(event){
+       playTone(event.key);
+    })
+}
+
+//Case Specific Function to play sound
+
+function playTone(key) {
+    switch(key)
     {
         case "w":
             var audio = new Audio("sounds/tom-1.mp3");
@@ -43,10 +59,8 @@ document.querySelectorAll("button")[i].addEventListener("click", function(){
             audio.play();
             break;
     
-        
+        default:
+            console.log(this.innerHTML);
+            
     };
-})
-
-};
-
-
+}
