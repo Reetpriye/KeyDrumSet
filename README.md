@@ -1,6 +1,6 @@
 # DrumSet
 
-DrumSet is a basic vanilla JavaScript project.
+DrumSet is a basic vanilla JavaScript project. Also this is my first Repository on GitHub.
 
 ## Installation
 
