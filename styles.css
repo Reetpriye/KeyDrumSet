@@ -13,12 +13,14 @@ h1 {
 
 p {
   color: #DBEDF3;
-  font-family: sans-serif;
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
 }
 
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
+  font-size: 30px;
 }
 
 .w {
