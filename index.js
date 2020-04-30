@@ -4,8 +4,9 @@ var numOfDrumButtons = document.querySelectorAll("button").length;
 for (var i = 0; i < numOfDrumButtons; i++){
 
 document.querySelectorAll("button")[i].addEventListener("click", function(){
-    var innerhtml = this.innerHTML;
-    playTone(innerhtml);
+    var innerHtml = this.innerHTML;
+    playTone(innerHtml);
+    buttonAnimation(innerHtml);
 } );
 };
 
@@ -16,6 +17,7 @@ for (var i = 0; i < numOfDrumButtons; i++) {
     
     document.addEventListener("keypress", function(event){
        playTone(event.key);
+       buttonAnimation(event.key);
     })
 }
 
@@ -64,3 +66,19 @@ function playTone(key) {
             
     };
 }
+
+
+//Function for the Button Animation
+
+function buttonAnimation(key) {
+
+    var activeButton = document.querySelector("." + key);
+
+    activeButton.classList.add("pressed");
+
+    setTimeout(function (){
+        activeButton.classList.remove("pressed");
+    }, 100
+    );
+}
+
