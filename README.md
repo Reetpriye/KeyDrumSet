@@ -7,7 +7,7 @@ DrumSet is a basic vanilla JavaScript project. Also this is my first Repository 
 Access the site from the URL below.
 
 ```bash
-https://reetpriye.github.io/drumset
+https://keydrumset.netlify.app/
 ```
 
 ## Usage
