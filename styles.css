@@ -81,8 +81,11 @@ background-image: url(images/kick.png);
   border-radius: 15px;
   display: inline-block;
   width: 150px;
-  height: 150px;
+  height: auto;
   text-align: center;
+  font-size: 4rem;
+  padding: 0 auto;
+  overflow: hidden;
   margin: 10px;
   background-color: white;
 }
